@@ -9,12 +9,12 @@ import SwiftUI
 
 struct GoogleReviews: View {
 
-    var reviewData: ReviewsResultData
-    var wholeNum: Double
-    var rating: Double
-    var remainderNum: Double
+    private var reviewData: ReviewsResultData
+    private var wholeNum: Double
+    private var rating: Double
+    private var remainderNum: Double
     @State public var results: ReviewsResultData!
-    @State var isPresented = false
+    @State public var isPresented = false
     
     init(reviewData: ReviewsResultData){
         self.reviewData = reviewData

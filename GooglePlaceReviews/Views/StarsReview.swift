@@ -9,8 +9,8 @@ import SwiftUI
 
 struct StarsView: View {
     
-    var wholeNum: Int
-    var remainderNum: Double
+    private var wholeNum: Int
+    private var remainderNum: Double
     
     init(wholeNum: Double, remainderNum: Double){
         self.wholeNum = Int(wholeNum.rounded(.towardZero))

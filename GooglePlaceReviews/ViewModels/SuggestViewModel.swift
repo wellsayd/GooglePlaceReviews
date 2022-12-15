@@ -9,8 +9,8 @@ import Foundation
 
 internal class SuggestViewModel {
     
-    let apiCall = ApiCall()
-    var googleApiKey = ""
+    private let apiCall = ApiCall()
+    private let googleApiKey = "AIzaSyBnv02bp5AbbNThg8CLZpFQZLnn-kN-V1I"
     
     func getData(searchFor: String) async -> PredictionsResultData? {
         
@@ -62,7 +62,7 @@ internal class SuggestViewModel {
         return (nil)
     }
     
-    func readLocalJSONFile(fileName: String) -> (status: ApiStatus,  data: Any)  {
+    private func readLocalJSONFile(fileName: String) -> (status: ApiStatus,  data: Any)  {
         do {
             if let filePath = Bundle.main.path(forResource: fileName, ofType: "json") {
                 let fileUrl = URL(fileURLWithPath: filePath)

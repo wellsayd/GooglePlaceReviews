@@ -50,6 +50,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C203CF42294B84970056B6F5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C282C10A294B7A28004EC6EB /* SuggestView.swift */,
+				C282C10D294B7A28004EC6EB /* GoogleReviews.swift */,
+				C282C110294B7A28004EC6EB /* ReviewsView.swift */,
+				C282C10E294B7A28004EC6EB /* StarsReview.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C203CF43294B84B30056B6F5 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				C282C10B294B7A28004EC6EB /* SuggestViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		C203CF44294B84BE0056B6F5 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				C282C111294B7A28004EC6EB /* ApiCall.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		C203CF45294B84CC0056B6F5 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				C282C109294B7A28004EC6EB /* PredictionsResultData.swift */,
+				C282C10F294B7A28004EC6EB /* ReviewsResultData.swift */,
+				C203CF3E294B802E0056B6F5 /* GoogleReviewsData.json */,
+				C203CF40294B81580056B6F5 /* GooglePredictionsData.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		C282C0EF294B79A6004EC6EB = {
 			isa = PBXGroup;
 			children = (
@@ -69,16 +107,10 @@
 		C282C0FA294B79A6004EC6EB /* GooglePlaceReviews */ = {
 			isa = PBXGroup;
 			children = (
-				C203CF3E294B802E0056B6F5 /* GoogleReviewsData.json */,
-				C203CF40294B81580056B6F5 /* GooglePredictionsData.json */,
-				C282C111294B7A28004EC6EB /* ApiCall.swift */,
-				C282C10D294B7A28004EC6EB /* GoogleReviews.swift */,
-				C282C109294B7A28004EC6EB /* PredictionsResultData.swift */,
-				C282C10F294B7A28004EC6EB /* ReviewsResultData.swift */,
-				C282C110294B7A28004EC6EB /* ReviewsView.swift */,
-				C282C10E294B7A28004EC6EB /* StarsReview.swift */,
-				C282C10A294B7A28004EC6EB /* SuggestView.swift */,
-				C282C10B294B7A28004EC6EB /* SuggestViewModel.swift */,
+				C203CF45294B84CC0056B6F5 /* Data */,
+				C203CF44294B84BE0056B6F5 /* Utils */,
+				C203CF43294B84B30056B6F5 /* ViewModels */,
+				C203CF42294B84970056B6F5 /* Views */,
 				C282C0FB294B79A6004EC6EB /* GooglePlaceReviewsApp.swift */,
 				C282C0FF294B79A7004EC6EB /* Assets.xcassets */,
 				C282C101294B79A7004EC6EB /* Preview Content */,
