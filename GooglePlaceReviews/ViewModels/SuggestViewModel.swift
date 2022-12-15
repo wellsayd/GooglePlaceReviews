@@ -17,7 +17,6 @@ internal class SuggestViewModel {
         var data: (status: ApiStatus,  data: Any)
         
         if(googleApiKey != "") {
-            let apiCall = ApiCall()
             data = await apiCall.makeCall("https://maps.googleapis.com/maps/api/place/autocomplete/json?input=" + searchFor + "&key=" + googleApiKey)
         } else {
             data = ReadLocalJSONFile().readLocalJSONFile(fileName: "./GooglePredictionsData")
@@ -43,7 +42,6 @@ internal class SuggestViewModel {
         var data: (status: ApiStatus,  data: Any)
         
         if(googleApiKey != "") {
-            let apiCall = ApiCall()
             data = await apiCall.makeCall("https://maps.googleapis.com/maps/api/place/details/json?place_id=" + placeId + "&key=" + googleApiKey)
 
         } else {
