@@ -10,7 +10,7 @@ import Foundation
 internal class SuggestViewModel {
     
     private let apiCall = ApiCall()
-    private let googleApiKey = "AIzaSyBnv02bp5AbbNThg8CLZpFQZLnn-kN-V1I"
+    private let googleApiKey = ""
     
     func getData(searchFor: String) async -> PredictionsResultData? {
         
