@@ -20,7 +20,7 @@ internal class SuggestViewModel {
             let apiCall = ApiCall()
             data = await apiCall.makeCall("https://maps.googleapis.com/maps/api/place/autocomplete/json?input=" + searchFor + "&key=" + googleApiKey)
         } else {
-            data = readLocalJSONFile(fileName: "./GooglePredictionsData")
+            data = ReadLocalJSONFile().readLocalJSONFile(fileName: "./GooglePredictionsData")
         }
 
         if(data.status == .success) {
@@ -47,7 +47,7 @@ internal class SuggestViewModel {
             data = await apiCall.makeCall("https://maps.googleapis.com/maps/api/place/details/json?place_id=" + placeId + "&key=" + googleApiKey)
 
         } else {
-            data = readLocalJSONFile(fileName: "./GoogleReviewsData")
+            data = ReadLocalJSONFile().readLocalJSONFile(fileName: "./GoogleReviewsData")
         }
 
         if(data.status == .success) {

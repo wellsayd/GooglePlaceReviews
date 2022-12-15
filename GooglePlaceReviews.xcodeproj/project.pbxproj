@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		C203CF3F294B802E0056B6F5 /* GoogleReviewsData.json in Resources */ = {isa = PBXBuildFile; fileRef = C203CF3E294B802E0056B6F5 /* GoogleReviewsData.json */; };
 		C203CF41294B81580056B6F5 /* GooglePredictionsData.json in Resources */ = {isa = PBXBuildFile; fileRef = C203CF40294B81580056B6F5 /* GooglePredictionsData.json */; };
+		C203CF47294B8D420056B6F5 /* ReadLocalJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = C203CF46294B8D420056B6F5 /* ReadLocalJson.swift */; };
 		C282C0FC294B79A6004EC6EB /* GooglePlaceReviewsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C282C0FB294B79A6004EC6EB /* GooglePlaceReviewsApp.swift */; };
 		C282C100294B79A7004EC6EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C282C0FF294B79A7004EC6EB /* Assets.xcassets */; };
 		C282C103294B79A7004EC6EB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C282C102294B79A7004EC6EB /* Preview Assets.xcassets */; };
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		C203CF3E294B802E0056B6F5 /* GoogleReviewsData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = GoogleReviewsData.json; sourceTree = "<group>"; };
 		C203CF40294B81580056B6F5 /* GooglePredictionsData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = GooglePredictionsData.json; sourceTree = "<group>"; };
+		C203CF46294B8D420056B6F5 /* ReadLocalJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadLocalJson.swift; sourceTree = "<group>"; };
 		C282C0F8294B79A6004EC6EB /* GooglePlaceReviews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GooglePlaceReviews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C282C0FB294B79A6004EC6EB /* GooglePlaceReviewsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GooglePlaceReviewsApp.swift; sourceTree = "<group>"; };
 		C282C0FF294B79A7004EC6EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				C282C111294B7A28004EC6EB /* ApiCall.swift */,
+				C203CF46294B8D420056B6F5 /* ReadLocalJson.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -205,6 +208,7 @@
 				C282C119294B7A28004EC6EB /* ReviewsView.swift in Sources */,
 				C282C113294B7A28004EC6EB /* SuggestView.swift in Sources */,
 				C282C118294B7A28004EC6EB /* ReviewsResultData.swift in Sources */,
+				C203CF47294B8D420056B6F5 /* ReadLocalJson.swift in Sources */,
 				C282C0FC294B79A6004EC6EB /* GooglePlaceReviewsApp.swift in Sources */,
 				C282C112294B7A28004EC6EB /* PredictionsResultData.swift in Sources */,
 			);
